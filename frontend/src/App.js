@@ -6,10 +6,10 @@ import ChatInterface from './components/ChatInterface';
 import {  useState } from 'react';
 import { getCurrentISTTime } from './utility/utility';
 
-const socket = io("http://localhost:8080/");
+const socket = io("https://chantlo-app.onrender.com/");
 
 function App() {
-  const [isRoomJoined, setIsRoomJoined] = useState(true);
+  const [isRoomJoined, setIsRoomJoined] = useState(false);
   const [user, setUser] = useState({})
 
   const getFormDetails = (username, roomNo)=>{
